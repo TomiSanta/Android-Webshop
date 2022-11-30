@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".RegisterActivity">
+
+<TextView
+    android:id="@+id/registrationTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/registration"
+    android:textAlignment="center"
+    android:textSize="24sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.002"
+    tools:layout_editor_absoluteX="0dp" />
+
+<EditText
+    android:id="@+id/userNameEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/user_name"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/registrationTextView"
+    app:layout_constraintVertical_bias="0.01"
+    tools:layout_editor_absoluteX="15dp" />
+
+<EditText
+    android:id="@+id/userEmailEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/email_address"
+    android:inputType="textEmailAddress"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/userNameEditText"
+    app:layout_constraintVertical_bias="0.0"
+    tools:layout_editor_absoluteX="25dp" />
+
+<EditText
+    android:id="@+id/passwordEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/password"
+    android:inputType="textPassword"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/userEmailEditText"
+    app:layout_constraintVertical_bias="0.016"
+    tools:layout_editor_absoluteX="25dp" />
+
+<EditText
+    android:id="@+id/passwordAgainEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/password_again"
+    android:inputType="textPassword"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+    app:layout_constraintVertical_bias="0.0"
+    tools:layout_editor_absoluteX="16dp" />
+
+<EditText
+    android:id="@+id/phoneEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/phone_number"
+    android:inputType="phone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/passwordAgainEditText"
+    app:layout_constraintVertical_bias="0.02"
+    tools:layout_editor_absoluteX="16dp" />
+
+<EditText
+    android:id="@+id/addressEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/address"
+    android:inputType="textPostalAddress|textMultiLine"
+    android:maxLines="2"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/phoneEditText"
+    app:layout_constraintVertical_bias="0.033"
+    tools:layout_editor_absoluteX="25dp" />
+
+<RadioGroup
+    android:id="@+id/gender"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/addressEditText"
+    app:layout_constraintVertical_bias="0.03"
+    tools:layout_editor_absoluteX="36dp">
+
+    <RadioButton
+        android:id="@+id/man"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/man" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/woman" />
+</RadioGroup>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/gender"
+    app:layout_constraintVertical_bias="0.092"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="25dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="register"
+        android:text="@string/registration" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:onClick="cancel"
+        android:text="@string/cancel" />
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

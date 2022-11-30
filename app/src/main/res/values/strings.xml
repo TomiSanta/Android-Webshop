@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Webshop</string>
+    <string name="name">Név</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="registration">Regisztráció</string>
+    <string name="user_name">Felhasználónév</string>
+    <string name="email_address">E-mail cím</string>
+    <string name="password_again">Jelszó megerősítése</string>
+    <string name="cancel">Mégse</string>
+    <string name="phone_number">Telefonszám</string>
+    <string name="address">Postai cím</string>
+    <string name="man">Férfi</string>
+    <string name="woman">Nő</string>
+    <string name="description">Termék leírás.</string>
+    <string name="login_guest">Bejelentkezés vendégként</string>
+    <string name="item_placeholder">Termék neve</string>
+    <string name="item_info_placeholder">Termék leírása</string>
+    <string name="delete">Törlés</string>
+    <string name="to_cart">Kosárba</string>
+
+    <string-array name="shopping_item_names">
+        <item>TV</item>
+        <item>Telefon</item>
+        <item>Kávéfőző</item>
+        <item>Laptop</item>
+        <item>Tablet</item>
+        <item>Kamera</item>
+        <item>Fényképezőgép</item>
+        <item>GPS</item>
+        <item>Elektromos roller</item>
+        <item>Okosóra</item>
+        <item>BluRay</item>
+        <item>Xbox</item>
+        <item>PlayStation</item>
+        <item>Erősítő</item>
+        <item>Hangfal</item>
+    </string-array>
+
+    <string-array name="shopping_item_desc">
+        <item>Ez egy TV!</item>
+        <item>Ez egy Telefon!</item>
+        <item>Ez egy Kávéfőző!</item>
+        <item>Ez egy Laptop!</item>
+        <item>Ez egy Tablet!</item>
+        <item>Ez egy Kamera!</item>
+        <item>Ez egy Fényképezőgép!</item>
+        <item>Ez egy GPS!</item>
+        <item>Ez egy Elektromos roller!</item>
+        <item>Ez egy Okosóra!</item>
+        <item>Ez egy BluRay!</item>
+        <item>Ez egy Xbox!</item>
+        <item>Ez egy PlayStation!</item>
+        <item>Ez egy Erősítő!</item>
+        <item>Ez egy Hangfal!</item>
+    </string-array>
+
+    <array name="shopping_item_rates">
+        <item>4.5</item>
+        <item>5</item>
+        <item>3.6</item>
+        <item>3.8</item>
+        <item>3.5</item>
+        <item>2.1</item>
+        <item>4</item>
+        <item>1.5</item>
+        <item>4.3</item>
+        <item>4.5</item>
+        <item>2.5</item>
+        <item>3.7</item>
+        <item>4.3</item>
+        <item>3.6</item>
+        <item>2.2</item>
+    </array>
+
+    <array name="shopping_item_image">
+        <item>@drawable/tv</item>
+        <item>@drawable/telefon</item>
+        <item>@drawable/kavefozo</item>
+        <item>@drawable/laptop</item>
+        <item>@drawable/tablet</item>
+        <item>@drawable/kamera</item>
+        <item>@drawable/fenykepezogep</item>
+        <item>@drawable/gps</item>
+        <item>@drawable/eroller</item>
+        <item>@drawable/okosora</item>
+        <item>@drawable/bluray</item>
+        <item>@drawable/xbox</item>
+        <item>@drawable/ps5</item>
+        <item>@drawable/erosito</item>
+        <item>@drawable/hangfal</item>
+    </array>
+
+    <string-array name="shopping_item_price">
+        <item>200000 FT</item>
+        <item>450000 FT</item>
+        <item>38000 FT</item>
+        <item>175000 FT</item>
+        <item>89000 FT</item>
+        <item>12900 FT</item>
+        <item>70000 FT</item>
+        <item>14900 FT</item>
+        <item>73000 FT</item>
+        <item>173000 FT</item>
+        <item>119000 FT</item>
+        <item>119000 FT</item>
+        <item>200000 FT</item>
+        <item>75000 FT</item>
+        <item>36000 FT</item>
+    </string-array>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopListActivity">
+
+    <ImageView
+        android:id="@+id/tv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tv"/>
+
+    <ImageView
+        android:id="@+id/telefon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:srcCompat="@drawable/telefon"/>
+
+    <ImageView
+        android:id="@+id/kavefozo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefon"
+        app:srcCompat="@drawable/kavefozo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/tv"
+        app:layout_constraintTop_toTopOf="@+id/tv"
+        android:text="@string/description"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/telefon"
+        app:layout_constraintTop_toTopOf="@+id/telefon"
+        android:text="@string/description"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/kavefozo"
+        app:layout_constraintTop_toTopOf="@+id/kavefozo"
+        android:text="@string/description"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
